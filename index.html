@@ -88,9 +88,10 @@
 
 
     <script type="text/javascript">
+    var  watchId;
         function startWatch() {
             if (navigator.geolocation)
-                var watchId = navigator.geolocation.watchPosition(successCallback,
+                 watchId = navigator.geolocation.watchPosition(successCallback,
                     errorCallback, {
                         enableHighAccuracy: true,
                         timeout: 5000,
