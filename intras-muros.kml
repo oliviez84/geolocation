@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+  <Document>
+    <name>intras-muros</name>
+    <Style id="poly-F57C00-5701-97-normal">
+      <LineStyle>
+        <color>ff007cf5</color>
+        <width>5.701</width>
+      </LineStyle>
+      <PolyStyle>
+        <color>61007cf5</color>
+        <fill>1</fill>
+        <outline>1</outline>
+      </PolyStyle>
+    </Style>
+    <Style id="poly-F57C00-5701-97-highlight">
+      <LineStyle>
+        <color>ff007cf5</color>
+        <width>8.5515</width>
+      </LineStyle>
+      <PolyStyle>
+        <color>61007cf5</color>
+        <fill>1</fill>
+        <outline>1</outline>
+      </PolyStyle>
+    </Style>
+    <StyleMap id="poly-F57C00-5701-97">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#poly-F57C00-5701-97-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#poly-F57C00-5701-97-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Placemark>
+      <name>Intras muros</name>
+      <description>Mairie annexe intras-muros 12,Places des carmes 0413605055</description>
+      <styleUrl>#poly-F57C00-5701-97</styleUrl>
+      <Polygon>
+        <outerBoundaryIs>
+          <LinearRing>
+            <tessellate>1</tessellate>
+            <coordinates>
+              4.8041942,43.9528922,0
+              4.802134,43.9523668,0
+              4.7984861,43.9471606,0
+              4.7956112,43.9439936,0
+              4.8031642,43.9426958,0
+              4.807048,43.9423869,0
+              4.814966,43.9437464,0
+              4.8192575,43.9489375,0
+              4.8201051,43.9502506,0
+              4.8201802,43.9512238,0
+              4.8193219,43.9520039,0
+              4.8170903,43.9527531,0
+              4.8144242,43.9535218,0
+              4.8122301,43.9538578,0
+              4.8074558,43.9538501,0
+              4.8041942,43.9528922,0
+            </coordinates>
+          </LinearRing>
+        </outerBoundaryIs>
+      </Polygon>
+    </Placemark>
+  </Document>
+</kml>
