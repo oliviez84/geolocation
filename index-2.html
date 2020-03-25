@@ -208,7 +208,7 @@
         // Initialisation de la carte pour l'élément portant l'id "map"
         var map = new google.maps.Map(document.getElementById("map"), optionsGmaps);
         
-        var url = 'http://sorties-pedagogiques.com/static/kml/13.kml'
+        var url = 'https://oli-geo.netlify.com/avignon.kml'
         var coucheKML = new google.maps.KmlLayer({
             map: map,
             url: url
@@ -217,8 +217,8 @@
         var latlng;
         // var ctaLayer = new google.maps.KmlLayer('https://oli-geo.netlify.com/chemin1.kml');
         // ctaLayer.setMap(map);
-        var ctaLayer = new google.maps.KmlLayer('https://oli-geo.netlify.com/chemin2.kml');
-        ctaLayer.setMap(map);    
+        // var ctaLayer = new google.maps.KmlLayer('https://oli-geo.netlify.com/chemin2.kml');
+        // ctaLayer.setMap(map);    
     </script>
 
 </body>
