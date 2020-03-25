@@ -125,7 +125,15 @@
        
           
         });
+        kmlLayer.addListener('click', function(kmlEvent) {
+    var text = kmlEvent.featureData.description;
+    showInContentWindow(text);
+  }); 
         
+  function showInContentWindow(text) {
+    var sidediv = document.getElementById('content-window');
+    sidediv.innerHTML = text;
+  }
           var iconBase =
               'https://developers.google.com/maps/documentation/javascript/examples/full/images/';
   
