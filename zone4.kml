@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+  <Document>
+    <name>zone 4</name>
+    <Style id="poly-757575-1200-77-nodesc-normal">
+      <LineStyle>
+        <color>ff757575</color>
+        <width>1.2</width>
+      </LineStyle>
+      <PolyStyle>
+        <color>4d757575</color>
+        <fill>1</fill>
+        <outline>1</outline>
+      </PolyStyle>
+      <BalloonStyle>
+        <text><![CDATA[<h3>$[name]</h3>]]></text>
+      </BalloonStyle>
+    </Style>
+    <Style id="poly-757575-1200-77-nodesc-highlight">
+      <LineStyle>
+        <color>ff757575</color>
+        <width>1.8</width>
+      </LineStyle>
+      <PolyStyle>
+        <color>4d757575</color>
+        <fill>1</fill>
+        <outline>1</outline>
+      </PolyStyle>
+      <BalloonStyle>
+        <text><![CDATA[<h3>$[name]</h3>]]></text>
+      </BalloonStyle>
+    </Style>
+    <StyleMap id="poly-757575-1200-77-nodesc">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#poly-757575-1200-77-nodesc-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#poly-757575-1200-77-nodesc-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Placemark>
+      <name>zone 4</name>
+      <styleUrl>#poly-757575-1200-77-nodesc</styleUrl>
+      <Polygon>
+        <outerBoundaryIs>
+          <LinearRing>
+            <tessellate>1</tessellate>
+            <coordinates>
+              4.8069267,43.9422231,0
+              4.8035362,43.93438,0
+              4.7990304,43.9287121,0
+              4.7982585,43.9265058,0
+              4.8000609,43.9272476,0
+              4.802314,43.9289475,0
+              4.8092448,43.9286076,0
+              4.8242652,43.9302766,0
+              4.8283851,43.9321928,0
+              4.8318327,43.9343317,0
+              4.8149873,43.9436072,0
+              4.8069267,43.9422231,0
+            </coordinates>
+          </LinearRing>
+        </outerBoundaryIs>
+      </Polygon>
+    </Placemark>
+  </Document>
+</kml>
