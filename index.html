@@ -126,8 +126,8 @@
           var content = event.featureData.infoWindowHtml;
           var testimonial = document.getElementById('capture');
           testimonial.innerHTML = content;
-          //kmlLay:er_1.setMap(map)
-          map.panTo(kmlLayer_1)
+          kmlLayer_1.setMap(map)
+        //   map.panTo(kmlLayer_1)
         });
 
         var src_2 = 'https://oli-geo.netlify.com/zone4.kml';
