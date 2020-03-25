@@ -123,10 +123,11 @@
         });
 
         kmlLayer_1.addListener('click', function(event) {
+            kmlLayer_1.setMap(map)
           var content = event.featureData.infoWindowHtml;
           var testimonial = document.getElementById('capture');
           testimonial.innerHTML = content;
-        //   kmlLayer_1.setMap(map)
+          
         //   map.panTo(kmlLayer_1)
         });
 
@@ -138,6 +139,7 @@
         });
 
         kmlLayer_2.addListener('click', function(event) {
+            kmlLayer_2.setMap(map)
           var content = event.featureData.infoWindowHtml;
           var testimonial = document.getElementById('capture');
           testimonial.innerHTML = content;
@@ -151,6 +153,7 @@
         });
 
         kmlLayer_3.addListener('click', function(event) {
+            kmlLayer_3.setMap(map)
           var content = event.featureData.infoWindowHtml;
           var testimonial = document.getElementById('capture');
           testimonial.innerHTML = content;
