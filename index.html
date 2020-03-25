@@ -43,6 +43,13 @@
         var contentString = []
         function initMap() {
 
+
+            var url = 'http://sorties-pedagogiques.com/static/kml/13.kml'
+        var coucheKML = new google.maps.KmlLayer({
+            map: map,
+            url: url
+        });
+
              contentString[0] = '<div id="content">'+
       '<div id="siteNotice">'+
       '</div>'+
