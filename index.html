@@ -44,11 +44,7 @@
         function initMap() {
 
 
-            var url = 'http://sorties-pedagogiques.com/static/kml/13.kml'
-        var coucheKML = new google.maps.KmlLayer({
-            map: map,
-            url: url
-        });
+       
 
              contentString[0] = '<div id="content">'+
       '<div id="siteNotice">'+
@@ -100,7 +96,14 @@
   });
           map = new google.maps.Map(
               document.getElementById('map'),
-              {center: new google.maps.LatLng(43.949099, 4.807907), zoom: 12});
+              {center: new google.maps.LatLng(43.949099, 4.807907), zoom: 15});
+
+              var url = 'http://sorties-pedagogiques.com/static/kml/13.kml'
+        var coucheKML = new google.maps.KmlLayer({
+            map: map,
+            url: url
+        });
+
   
           var iconBase =
               'https://developers.google.com/maps/documentation/javascript/examples/full/images/';
@@ -154,6 +157,9 @@ marker[1].addListener('click', function() {
     infowindow[0].close();
     infowindow[1].open(map, marker[1]);
   });
+
+
+
         }
 
         function setMapOnAll(map) {
