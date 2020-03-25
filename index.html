@@ -112,6 +112,7 @@
             url: url
         });
         var src = 'https://oli-geo.netlify.com/zone4.kml';
+
         var kmlLayer = new google.maps.KmlLayer(src, {
           suppressInfoWindows: true,
           preserveViewport: false,
@@ -121,6 +122,8 @@
           var content = event.featureData.infoWindowHtml;
           var testimonial = document.getElementById('capture');
           testimonial.innerHTML = content;
+          console.log(content);
+          
         });
         
           var iconBase =
