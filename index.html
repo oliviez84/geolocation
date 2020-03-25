@@ -126,6 +126,7 @@
           var content = event.featureData.infoWindowHtml;
           var testimonial = document.getElementById('capture');
           testimonial.innerHTML = content;
+          kmlLayer_1.setMap(map)
         });
 
         var src_2 = 'https://oli-geo.netlify.com/zone4.kml';
@@ -140,6 +141,7 @@
           var testimonial = document.getElementById('capture');
           testimonial.innerHTML = content;
         });
+
         var src_3 = 'https://oli-geo.netlify.com/avignon.kml';
         var kmlLayer_3 = new google.maps.KmlLayer(src_3, {
           suppressInfoWindows: false,
