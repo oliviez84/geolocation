@@ -99,11 +99,11 @@
 
 //-----------------------klm fichier --------------------------//
 
-              var url = 'https://oli-geo.netlify.com/avignon.kml'
-        var coucheKML = new google.maps.KmlLayer({
-            map: map,
-            url: url
-        });
+        //       var url = 'https://oli-geo.netlify.com/avignon.kml'
+        // var coucheKML = new google.maps.KmlLayer({
+        //     map: map,
+        //     url: url
+        // });
         //       var url = 'https://oli-geo.netlify.com/zone.kml'
         // var coucheKML = new google.maps.KmlLayer({
         //     map: map,
@@ -136,6 +136,18 @@
         });
 
         kmlLayer_2.addListener('click', function(event) {
+          var content = event.featureData.infoWindowHtml;
+          var testimonial = document.getElementById('capture');
+          testimonial.innerHTML = content;
+        });
+        var src_3 = 'https://oli-geo.netlify.com/avignon.kml';
+        var kmlLayer_3 = new google.maps.KmlLayer(src_3, {
+          suppressInfoWindows: false,
+          preserveViewport: false,
+          map: map
+        });
+
+        kmlLayer_3.addListener('click', function(event) {
           var content = event.featureData.infoWindowHtml;
           var testimonial = document.getElementById('capture');
           testimonial.innerHTML = content;
