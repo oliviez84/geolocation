@@ -25,7 +25,7 @@
             <input onclick="clearMarkers();" type=button value="Hide Markers">
             <input onclick="showMarkers();" type=button value="Show All Markers">
             <input onclick="hidemarker();" type=button value="suprimer que hopital">
-          
+          <div id="capture"></div>
         </div>
     </div>
 </div>
@@ -110,7 +110,11 @@
             map: map,
             url: url
         });
-
+        kmlLayer.addListener('click', function(event) {
+          var content = event.featureData.infoWindowHtml;
+          var testimonial = document.getElementById('capture');
+          testimonial.innerHTML = content;
+        });
           var iconBase =
               'https://developers.google.com/maps/documentation/javascript/examples/full/images/';
   
