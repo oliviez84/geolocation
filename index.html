@@ -115,15 +115,27 @@
         //     url: url
         // });
 
-        var src = 'https://oli-geo.netlify.com/zone4.kml';
-
-        var kmlLayer = new google.maps.KmlLayer(src, {
+        var src_1 = 'https://oli-geo.netlify.com/zone.kml';
+        var kmlLayer_1 = new google.maps.KmlLayer(src_1, {
           suppressInfoWindows: false,
           preserveViewport: false,
           map: map
         });
 
-        kmlLayer.addListener('click', function(event) {
+        kmlLayer_1.addListener('click', function(event) {
+          var content = event.featureData.infoWindowHtml;
+          var testimonial = document.getElementById('capture');
+          testimonial.innerHTML = content;
+        });
+
+        var src_2 = 'https://oli-geo.netlify.com/zone4.kml';
+        var kmlLayer_2 = new google.maps.KmlLayer(src_2, {
+          suppressInfoWindows: false,
+          preserveViewport: false,
+          map: map
+        });
+
+        kmlLayer_2.addListener('click', function(event) {
           var content = event.featureData.infoWindowHtml;
           var testimonial = document.getElementById('capture');
           testimonial.innerHTML = content;
