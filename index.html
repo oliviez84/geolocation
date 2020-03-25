@@ -9,7 +9,7 @@
 <style>
   
     #map {
-        width: 500px;
+        width: 100%;
       height: 500px;
     }
   </style>
@@ -96,6 +96,9 @@
               document.getElementById('map'),
               {center: new google.maps.LatLng(43.949099, 4.807907), zoom: 12});
 
+
+//-----------------------klm fichier --------------------------//
+
               var url = 'https://oli-geo.netlify.com/avignon.kml'
         var coucheKML = new google.maps.KmlLayer({
             map: map,
@@ -115,26 +118,22 @@
         var src = 'https://oli-geo.netlify.com/zone4.kml';
 
         var kmlLayer = new google.maps.KmlLayer(src, {
-          suppressInfoWindows: true,
+          suppressInfoWindows: false,
           preserveViewport: false,
           map: map
         });
+
         kmlLayer.addListener('click', function(event) {
           var content = event.featureData.infoWindowHtml;
           var testimonial = document.getElementById('capture');
           testimonial.innerHTML = content;
-       
-          
         });
-        kmlLayer.addListener('click', function(kmlEvent) {
-    var text = kmlEvent.featureData.description;
-    showInContentWindow(text);
-  }); 
-        
-  function showInContentWindow(text) {
-    var sidediv = document.getElementById('content-window');
-    sidediv.innerHTML = text;
-  }
+
+ 
+
+
+
+
           var iconBase =
               'https://developers.google.com/maps/documentation/javascript/examples/full/images/';
   
